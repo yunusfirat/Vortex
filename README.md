@@ -11,4 +11,4 @@ user) for the EUR/USD exchange rate from a websocket feed.
 o The feed can be accessed by sending “{"topic": "subscribe", "to": "EURUSD:CUR"}” to
 ws://stream.tradingeconomics.com/?client=guest:guest
 o ‘dt’ is the timestamp as UTC and ‘price’ is the latest price.
-• The deliverable is a set of files that can be opened as a local webpage. 
+• The deliverable is a set of files that can be opened as a local webpage.    
