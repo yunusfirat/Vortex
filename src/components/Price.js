@@ -45,9 +45,9 @@ export default function Price() {
   let timestamp = data
     ? new Date(data.dt).toLocaleTimeString('en-UK')
     : 'Loading'
-  console.log(timestamp)
+//   console.log(timestamp)
 
-  console.log('time', timestamp)
+//   console.log('time', timestamp)
   return (
     <div>
       <h2>EUR/USD:{data ? data.price : 'Loading'}</h2>
