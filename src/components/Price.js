@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 export default function Price() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const socket = new W3CWebSocket(
-    'ws://stream.tradingeconomics.com/?client=guest:guest',
+    'wss://stream.tradingeconomics.com/?client=guest:guest',
   )
   const [data, setData] = useState({})
   let subRequest = {
