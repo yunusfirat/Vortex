@@ -7,7 +7,6 @@ export default function Price() {
   const [data, setData] = useState('')
 
   useEffect(() => {
-    console.log('Hello World!')
     const socket = new W3CWebSocket(
       'wss://stream.tradingeconomics.com/?client=guest:guest',
     )
@@ -52,9 +51,9 @@ export default function Price() {
   //   console.log('time', timestamp)
   return (
     <div>
-      <h2>EUR/USD:{data ? data.price : 'Loading'}</h2>
+      <h2>EUR/USD:{data ? data.price : '...Loading'}</h2>
       <div>
-        <h2>time:{timestamp === 'Invalid Date' ? 'Loading' : timestamp}</h2>
+        <h2>time:{timestamp === 'Invalid Date' ? '...Loading' : timestamp}</h2>
       </div>
     </div>
   )
