@@ -27,7 +27,7 @@ export default function Price() {
       let finaldata = JSON.parse(event.data)
       try {
         // eslint-disable-next-line no-cond-assign
-        if (finaldata.event = "data") {
+        if ((finaldata.event = 'data')) {
           setData(finaldata)
         }
       } catch (error) {
