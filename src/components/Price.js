@@ -46,14 +46,12 @@ export default function Price() {
   let timestamp = data
     ? new Date(data.dt).toLocaleTimeString('en-UK')
     : 'Loading'
-  //   console.log(timestamp)
-
   //   console.log('time', timestamp)
   return (
     <div>
-      <h2>EUR/USD:{data ? data.price : '...Loading'}</h2>
+      <h2>EUR/USD:{data.price ? `${' '} ${data.price}` : `${' '} ...Loading`}</h2>
       <div>
-        <h2>time:{timestamp === 'Invalid Date' ? '...Loading' : timestamp}</h2>
+        <h2>time:{timestamp === 'Invalid Date' ? `${' '} ...Loading`: `${' '} ${timestamp}`}</h2>
       </div>
     </div>
   )
